@@ -104,3 +104,4 @@ with tab2:
             else:
                 new_rate = max(0, current_rate - adjust)
                 st.warning(f"📉 **降幅 > 150 (降太快)**：\n\n👉 處置：Pump 速率調降 **-{adjust:.1f}**\n\n🎯 **新滴數設定：{new_rate:.1f} mL/hr**")
+st.caption("© 2026 [護理師 吳智弘] 開發設計. 版權所有。")

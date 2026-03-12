@@ -1,0 +1,45 @@
+# 🚨 急診 DKA/HHS 動態處置導航系統 (ER DKA/HHS Dynamic Navigation System)
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW)
+[![Clinical Tool](https://img.shields.io/badge/Type-Clinical%20Decision%20Support-blue.svg)]()
+
+## 📖 專案簡介 (About the Project)
+在節奏極快、高壓的急診與災難醫療 (D-MAT) 環境中，糖尿病酮酸血症 (DKA) 與高滲透壓高血糖狀態 (HHS) 的點滴與胰島素幫浦 (IVII Pump) 滴定，往往是第一線臨床人員的計算痛點。
+
+本系統基於 **美國糖尿病學會 (ADA) 最新高血糖危機處置指引**，並揉合高階急救術 (ACLS/ETTC) 的直覺系統化思維，將複雜的學理轉化為防呆、快速的 Web App 導航工具。旨在降低認知負荷、減少計算錯誤，並提升病患安全。
+
+## ✨ 核心功能與臨床防呆設計 (Core Features)
+* **🛑 血鉀絕對防線 (The K+ Hard Stop)**：強制檢核初始血鉀，低血鉀 (< 3.3 mEq/L) 時系統將亮紅燈並給予阻斷警示，預防致命性心律不整。
+* **💧 智慧點滴決策**：自動代入 Katz 公式計算「校正血鈉 (Corrected Na+)」，精準引導 0.9% N/S 與 0.45% Saline 的輸液切換。
+* **⏱️ Q2H 動態滴定引擎**：依據每兩小時血糖降幅 (目標 100-150 mg/dL)，自動計算並給出下一步 Pump 調整速率。
+* **🚨 危機自動攔截**：內建「防護轉換期 (血糖 ≤ 200，加糖減半)」與「嚴重低血糖 (< 70，停泵推糖)」雙重警示機制。
+
+## 🧠 獨創臨床口訣 (Clinical Mnemonic)
+本專案內建急診專用「DKA 兩小滴定訣」，方便臨床教學與記憶：
+> **兩百加糖先砍半，七十停泵推大糖。**
+> **兩小降幅看百五，太快太慢調零五。**
+
+---
+
+## ⚠️ 醫療免責聲明 (Medical Disclaimer)
+1. **僅供臨床輔助**：本應用程式為臨床決策輔助工具 (Clinical Decision Support Tool)，**絕對無法取代醫師與護理人員的專業臨床判斷**。
+2. **依循院內規範**：各醫療院所之常規 (Protocol) 與藥物泡製濃度可能有所不同（本系統預設為 Apidra 1 U/mL）。實際給藥與處置，**必須以該院主治醫師之最終醫囑為準**。
+3. **免責條款**：開發者已盡力確保公式與邏輯之準確性，但對於任何人因使用本程式所產生之直接、間接或衍生性醫療糾紛與損害，開發者不負任何法律責任。使用者須自行承擔應用此工具之風險。
+
+---
+
+## 📄 授權條款與版權宣告 (License & Copyright)
+**© 2026 [護理師 吳智弘]. All Rights Reserved.**
+
+本專案之程式碼、UI 介面邏輯設計、交班公版格式以及原創臨床口訣，均受著作權法保護。本專案採用 **[創用 CC 姓名標示-非商業性-禁止改作 4.0 國際 授權條款 (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW)** 授權。
+
+*您可以自由地：*
+* **分享**：在任何媒介或格式下重製、發布本系統供臨床同好或教學使用。
+
+*但必須遵從下列條件：*
+* **姓名標示 (BY)**：必須保留本專案的作者署名與版權聲明。
+* **非商業性 (NC)**：絕不可將本工具用於任何商業營利目的（包含但不限於付費軟體、收費課程之強制教材等）。
+* **禁止改作 (ND)**：為保障醫療計算之嚴謹性與安全性，**禁止任何人擅自修改本系統之核心公式、參數、警示邏輯或口訣**，並將修改後的版本散布。若需客製化調整，請自行於院內獨立開發，不得沿用本專案之名義。
+
+---
+*Designed for Emergency Room & Critical Care Excellence.*
